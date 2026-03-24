@@ -1,7 +1,15 @@
 # Webcam floating windows on the screen
 
 
-## Requirements
+## Download Pre-built Binary
+
+- [For Windows](https://github.com/akarshit-1609/webcam_using_python/releases/download/v1.0.0/webcam-windows-x64.exe)
+
+
+
+## From Source Code
+
+### Requirements
 
 To run this program, you will need:
 
@@ -12,7 +20,7 @@ To run this program, you will need:
 #### Hardware :-
 * **Camera:** A built-in front-facing camera (Laptop) or an external USB webcam (Desktop) is required.
 
-## Installation
+### Installation
 
 * **Clone the repository:**
     ```bash
@@ -28,7 +36,7 @@ To run this program, you will need:
    cd program_directory
    pip install -r requirements.txt
 
-## Run Instruction
+### Run Instruction
 
 * **Start Program:**
 
