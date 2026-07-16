@@ -53,3 +53,10 @@ To run this program, you will need:
 * Click Start Button to start webcam on screen.
 
 * You can also modify webcam size and shape by given settings.
+
+
+---
+
+## License
+
+This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
