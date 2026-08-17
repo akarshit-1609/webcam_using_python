@@ -3,6 +3,7 @@ from tkinter import ttk
 from tkinter import messagebox
 import threading
 from webcam_library import WebcamTk
+import platform
 
 window = tk.Tk()
 screen_width, screen_height = window.winfo_screenwidth(), window.winfo_screenheight()
@@ -13,7 +14,8 @@ style.theme_use("clam")
 window.geometry(f"{window_width}x{window_height}+{int((screen_width-window_width)/2)}+{int((screen_height-window_height)/2)}")
 window.minsize(window_width, window_height)
 window.title("Webcam")
-window.iconbitmap("icons/favicon.ico")  # For Windows Only
+if platform.system() == "Windows":
+    window.iconbitmap("icons/favicon.ico")
 window.iconphoto(True, tk.PhotoImage(file="icons/webcam.png"))
 window.config(bg=bg_color)
 
@@ -186,5 +188,8 @@ window.bind("<Configure>", resize_widget)
 if not camera.exist:
     messagebox.showerror("Error", "Camera Not Found.")
     camera_button.config(style="DisabledButton.TButton", cursor="arrow", text="Camera Not Found", state="disabled")
+else:
+    if platform.system() != "Windows":
+        messagebox.showwarning("Feature Not Available", "Some features work reliably on Windows, while other operating systems currently have compatibility issues, resulting in occasional UI inconsistencies and unpredictable behavior.")
 
 window.mainloop()

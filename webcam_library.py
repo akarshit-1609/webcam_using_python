@@ -1,6 +1,7 @@
 import cv2
 import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
+import platform
 
 class WebcamTk:
     def __init__(self):
@@ -18,7 +19,8 @@ class WebcamTk:
         self.bg_color = '#abcdef'
         self.camera.overrideredirect(True)
         self.camera.attributes("-topmost", True)
-        self.camera.wm_attributes("-transparentcolor", self.bg_color)
+        if platform.system() == "Windows":
+            self.camera.wm_attributes("-transparentcolor", self.bg_color)
         self.camera.config(bg=self.bg_color, cursor="hand2")
         screen_w = self.camera.winfo_screenwidth()
         screen_h = self.camera.winfo_screenheight()
