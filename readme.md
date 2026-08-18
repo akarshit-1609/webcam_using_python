@@ -1,4 +1,4 @@
-# Webcam floating windows on the screen
+# Webcam floating window on the screen
 
 
 ## Download Pre-built Binary
