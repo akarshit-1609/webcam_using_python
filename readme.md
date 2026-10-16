@@ -5,7 +5,22 @@
 
 - [For Windows](https://github.com/akarshit-1609/webcam_using_python/releases/download/v1.0.0/webcam-windows-x64.exe)
 
+> [!WARNING]
+> **⚠️ Windows SmartScreen Warning**
+>
+> When running the Windows `.exe` binary, Windows SmartScreen may display a **"Windows protected your PC"** warning. This can occur because the executable is not signed with an expensive code-signing certificate.
+>
+> **How to run the application:**
+> 1. Click **"More info"** on the SmartScreen warning.
+> 2. Click **"Run anyway"** to proceed.
+>
+> **🔓 100% Open Source & Transparent**
+>
+> This project is fully open source. You can review the complete source code in this repository to understand how the application works and verify its behavior before running it. You are encouraged to inspect the code and build the application from source if you prefer.
+>
+> *This warning does not necessarily indicate that an application is malicious; however, always review the source code and ensure you trust the application before running it.*
 
+---
 
 ## From Source Code
 
